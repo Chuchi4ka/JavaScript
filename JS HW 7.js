@@ -5,10 +5,10 @@
 
 function pow(x, y) {
   let result = 1;
-  for (let i = 0; i < y; i++) {
+  for (let i = 1; i <= y; i++) {
       result *= x;
       
   } console.log(result)
 }
 
-pow(3, 3);
+pow(2, 5);
