@@ -15,7 +15,7 @@
 function getMinPrice(minPrice) {
   var minPrice = Infinity
   for (let i in services) {
-    minPrice = Math.min(minPrice, parseInt(services[i]));
+    minPrice = Math.min(minPrice, Number.parseInt(services[i]));
   } return minPrice;
 }
 console.log("Мінімальна вартість = " + getMinPrice() + " грн")
@@ -24,7 +24,7 @@ console.log("Мінімальна вартість = " + getMinPrice() + " гр�
 function getMaxPrice(maxPrice) {
   var maxPrice = -Infinity
   for (let i in services) {
-    maxPrice = Math.max(maxPrice, parseInt(services[i]));
+    maxPrice = Math.max(maxPrice, Number.parseInt(services[i]));
   } return maxPrice;
 }
 console.log("Максимальна вартість = " + getMaxPrice() + " грн")
@@ -33,7 +33,7 @@ console.log("Максимальна вартість = " + getMaxPrice() + " г�
 function getTotalPrice(totalPrice) {
   var totalPrice = 0
   for (let i in services) {
-    totalPrice = totalPrice + parseInt(services[i]);
+    totalPrice = totalPrice + Number.parseInt(services[i]);
   } return totalPrice;
 }
 console.log("Загальна вартість = " + getTotalPrice() + " грн")
