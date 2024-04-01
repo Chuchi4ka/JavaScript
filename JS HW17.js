@@ -9,11 +9,11 @@
 
 
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let min = arr[0];
+let max = arr.length - 1;
 
 function myBlend(arr) {
   for (let index = 0; index < arr.length; index++) {
-    let min = arr[0];
-    let max = arr.length;
     let rnd = Math.floor(min + Math.random() * (max - min));
     let startBland = arr[index];
     arr[index] = arr[rnd];
