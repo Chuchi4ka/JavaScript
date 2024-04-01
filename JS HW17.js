@@ -10,7 +10,7 @@
 
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 let min = arr[0];
-let max = arr.length - 1;
+let max = arr.length - 1; // бо довжина масиву у нас 9, але індексу 9 у нас немає, т.я. він починається з 0
 
 function myBlend(arr) {
   for (let index = 0; index < arr.length; index++) {
